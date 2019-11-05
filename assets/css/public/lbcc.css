@@ -134,8 +134,7 @@ img.main_logo {
 
 #header {
     background: #fff;
-    height: 50px;
-    padding: 1em;
+    height: 75px;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -1847,9 +1846,8 @@ img.pluslet_card_image {
     background-attachment: fixed;
     background-position: bottom left;
     position: fixed;
-    top: 0;
+    top: 75px;
     bottom: 0;
-    z-index: -30;
 }
 
 #sidebar, h1 {
@@ -1903,5 +1901,5 @@ a.header-link {
 }
 
 #header_inner_wrap .pure-g form, a.header-link {
-    margin-top: 26px;
+    margin-top: 42px;
 }
