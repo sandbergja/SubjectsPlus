@@ -70,12 +70,13 @@ a:hover {
     color: #cc6666;
 }
 
+
 h1 {
     color: #333333;
     font-size: 1.8em;
     font-weight: bold;
     padding: 0.5em 0 1em 700px;
-    margin: .5em 0 1em -700px;    
+    margin: .5em 0 1em -700px;
 }
 
 h2 {
@@ -335,13 +336,12 @@ img.main_logo {
 
 
 .titlebar {
-    color: #333;
+    color: #FFF;
     position: relative;
     padding: 0;
     margin: 0;
     width: 100%;    
-    background-color: #fff;
-    border-radius: 6px;
+    background-color: #005b94;
 
 }
 
@@ -352,7 +352,6 @@ img.main_logo {
     margin-top: 0px;
     padding: 10px;
     border:  none;
-    color: #333;
     background-color: transparent;
     -webkit-border-top-left-radius: 6px;
     -webkit-border-top-right-radius: 6px;
@@ -1590,7 +1589,10 @@ ul.guide-listing li .fa {color: #666; font-size:0.9em; cursor: pointer; margin-r
     display: inline-block !important;  
 }
 
-.index-search-area .ui-autocomplete-input:focus {border-color: #999 !important;}
+.ui-autocomplete-input {
+    border: 2px solid #E1E0DC;
+}
+
 
 .index-search-area .pure-button-topsearch {
     background-color: #666;
@@ -1837,7 +1839,8 @@ img.pluslet_card_image {
 }
 
 .pure-button, .expert-button {
-    transform: skewX(170deg);
+    clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%) padding-box;
+    padding-right: 20px;
 }
 
 #sidebar {
@@ -1860,10 +1863,10 @@ img.pluslet_card_image {
     position: relative;
     bottom: 20px;
     top: 80%;
-    font-size: 1.5em;
+    font-size: 1em;
     margin: 10px auto 10px 30px;
     box-shadow: 5px 3px #FDB913;
-    max-width: 60%;
+    max-width: 80%;
 }
 
 #not-sidebar {
@@ -1906,5 +1909,10 @@ a.header-link {
     #header_inner_wrap .pure-g form, a.header-link {
         margin-top: 42px;
     }
+}
+
+*:focus, a:focus {
+    outline: none;
+    border: 6px solid #45A169 !important;
 }
 
