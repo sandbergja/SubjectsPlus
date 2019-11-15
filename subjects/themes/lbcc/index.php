@@ -294,6 +294,7 @@ include("includes/header_lbcc.php");
 ////////////////////////////
 
 ?>
+<div id="content-after-navs" tabindex="-1">
 <div class="pure-g" id="guidesplash">
   <div class="pure-u-1 pure-u-lg-2-3" id="listguides">
 
@@ -343,6 +344,7 @@ include("includes/header_lbcc.php");
                  
 
   </div><!--end 1/3 sidebar area-->
+</div>
 </div>
 
 <script type="text/javascript" language="javascript">

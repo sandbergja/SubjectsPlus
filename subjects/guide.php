@@ -275,11 +275,13 @@ if (isset ($header_type) && ($header_type == 'um-new' || $header_type == 'splux'
         </div>
 		<!-- end tab-container -->
 
+            <div id="content-after-navs">
 		<div id="tab-body" class="<?php print $bonus_class; ?>">
             <?php
             $lobjGuide->outputTabs('public');
 
             ?>
+            </div>
         </div>
 		<!-- end tab-body -->
 

@@ -14,7 +14,7 @@
             </script>
 
             <br>
-            <div class="pure-g">
+            <div class="pure-g" id="content-after-navs" tabindex="-1">
                 <div class="pure-u-1 pure-u-lg-2-3">
                     <div class="pluslet_simple no_overflow">
 

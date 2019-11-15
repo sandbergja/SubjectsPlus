@@ -142,6 +142,7 @@ $layout = makePluslet("", $guide_results, "","",FALSE);
 
 ?>
 <br />
+<div id="content-after-navs" tabindex="-1">
 <div class="pure-g" id="guidesplash">
 <div class="pure-u-1 pure-u-md-2-3" id="listguides">
 <?php print $layout; ?>
@@ -179,6 +180,7 @@ $layout = makePluslet("", $guide_results, "","",FALSE);
         <!-- end pluslet -->
         <br />
 
+    </div>
     </div>
 </div>
 <?php

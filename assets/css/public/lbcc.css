@@ -1916,3 +1916,27 @@ a.header-link {
     border: 6px solid #45A169 !important;
 }
 
+/* For skip to main content links */
+a#skiptocontent {
+    padding:6px;
+    position: absolute;
+    top:-40px;
+    left:0px;
+    color:white;
+    border-right:1px solid white;
+    border-bottom:1px solid white;
+    border-bottom-right-radius:8px;
+    background:#873D5A;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 100;
+}
+
+a#skiptocontent:focus {
+    position:absolute;
+    left:0px;
+    top:0px;
+    outline-color:transparent;
+    -webkit-transition: top .1s ease-in;
+    transition: top .1s ease-in;
+}
