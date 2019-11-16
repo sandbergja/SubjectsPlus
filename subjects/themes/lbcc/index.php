@@ -217,7 +217,7 @@ include("includes/header_lbcc.php");
               $col_1 .= "</ul></div>";
               $col_2 .= "</ul></div>";
 
-              $layout .= "<div class=\"guide_list_container\"><div class=\"pure-g guide_list\"><div class=\"pure-u-1 guide_list_header\"><a name=\"section-$value\"></a><h3>$value</h3></div>" . $col_1 . $col_2 ."</div></div>";
+              $layout .= "<div class=\"guide_list_container\"><div class=\"pure-g guide_list\"><div class=\"pure-u-1 guide_list_header\"><a name=\"section-$value\"></a><h2>$value</h2></div>" . $col_1 . $col_2 ."</div></div>";
               
           } //end if
 
@@ -314,7 +314,7 @@ include("includes/header_lbcc.php");
 
       
           <div class="find-expert-area-circ">
-                  <h3 class="titlebar_text">Find an Expert</h3>
+                  <h2 class="titlebar_text">Find an Expert</h2>
                   <p><?php print $bonus_text; ?></p>
                   <ul class="expert-list-circ">                   
                       <?php print $guide_experts; ?>
