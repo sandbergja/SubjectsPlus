@@ -80,12 +80,10 @@ if (!isset ($noheadersearch)) {
 
 <div class="wrapper-full">
     <div class="pure-g">
-        <div class="pure-u-1-5" id="sidebar">
-          <a href="https://library.linnbenton.edu/contact" class="pure-button pure-button-topsearch">Get research help</a>
-          <a href="https://libcat.linnbenton.edu/eg/opac/myopac/main?redirect_to=%2Feg%2Fopac%2Fmyopac%2Fmain" class="pure-button pure-button-topsearch">Check my Library Account</a>
-        </div>
-        <div class="pure-u-4-5" id="not-sidebar">
+        <div class="pure-u-4-5">
           <h1><?php print $page_title ?></h1>
+          <div class="header-background">
+          </div>
             <div id="content_roof"></div> <!-- end #content_roof -->
             <div id="shadowkiller"></div> <!--end #shadowkiller-->
         

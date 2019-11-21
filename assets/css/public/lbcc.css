@@ -71,13 +71,6 @@ a:hover {
 }
 
 
-h1 {
-    color: #333333;
-    font-size: 1.8em;
-    font-weight: bold;
-    padding: 0.5em 0 1em 700px;
-    margin: .5em 0 1em -700px;
-}
 
 h2 {
   
@@ -136,7 +129,6 @@ img.main_logo {
 #header {
     background: #fff;
     height: 75px;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(0, 0, 0, 0.1);
 }
 
 #header_inner_wrap {
@@ -144,7 +136,6 @@ img.main_logo {
     padding: 0;
     width: 100%;
     background-color: #transparent;
-    height: 3em;
 }
 
 
@@ -1725,11 +1716,6 @@ ul.guide-listing li .fa {color: #666; font-size:0.9em; cursor: pointer; margin-r
         width:30%;
     }
 
-    h1 {
-        clear: left;
-        margin-top: 0;
-    }
-
     #guide_nav_tools {
         float: right !important;
         margin: 0 0 0 0;
@@ -1843,21 +1829,24 @@ img.pluslet_card_image {
     padding-right: 20px;
 }
 
-#sidebar {
-    background-image: url('../../images/public/river.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: bottom left;
-    position: fixed;
-    top: 75px;
-    bottom: 0;
+h1 {
+    clip-path: polygon(0 0, 100% 0%, 98% 100%, 0% 100%) border-box;
+    background-color: #FDB913;
+    color: #000;
+    margin-left: 4px;
+    padding: 0.5em 10px 1em 20px;
+    margin: .5em 0 1em 0;
+
 }
 
-#sidebar, h1 {
-    background-color: #E1E0DC;
+.header-background {
+    padding: 0 2px 1px 2px;
+    background-color: #873D5A;
+    height: 40px;
+    margin: -50px 0 0 70%;
 }
 
-#sidebar a.pure-button {
+#footer a.pure-button {
     background-color: #873D5A;
     color: #FFF;
     position: relative;
@@ -1867,10 +1856,6 @@ img.pluslet_card_image {
     margin: 10px auto 10px 30px;
     box-shadow: 5px 3px #FDB913;
     max-width: 80%;
-}
-
-#not-sidebar {
-    margin-left: 25%;
 }
 
 .button-top, a.button-top {

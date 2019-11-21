@@ -17,6 +17,8 @@
     <br />
     Powered by <a href="http://www.subjectsplus.com/">SubjectsPlus</a>
     </p>
+    <a href="https://library.linnbenton.edu/contact" class="pure-button pure-button-topsearch">Get research help</a>
+    <a href="https://libcat.linnbenton.edu/eg/opac/myopac/main?redirect_to=%2Feg%2Fopac%2Fmyopac%2Fmain" class="pure-button pure-button-topsearch">Check my Library Account</a>
 </div><!-- end #footer div -->
 
 
