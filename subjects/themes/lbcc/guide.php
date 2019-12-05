@@ -12,20 +12,6 @@ use SubjectsPlus\Control\Guide;
 use SubjectsPlus\Control\Querier;
 use SubjectsPlus\Control\SubjectsPlus\Control;
 
-$use_jquery = array("ui", "colorbox");  // don't want the UI styles?  remove ui_styles from array
-//$use_jquery = array('sp_legacy');
-
-include("../control/includes/autoloader.php"); // need to use this if header not loaded yet
-include("../control/includes/config.php");
-include("../control/includes/functions.php");
-
-
-
-if ( (isset( $subjects_theme )) ) {
-	include( "themes/$subjects_theme/guide.php" );
-	exit;
-}
-
 $db = new Querier;
 
 // special image path because of mod_rewrite issues when source types are included in URL
@@ -195,37 +181,13 @@ $tracking_image = "<img style=\"display: none;\" src=\"" . $PublicPath . "track.
     "\" aria-hidden=\"true\" alt=\"\" />";
 
 print $tracking_image;
-print $social_and_search;
-?>
-
-<!--Minimal header if um-new theme is used-->
-<?php
-if (isset ($header_type) && ($header_type == 'um-new' || $header_type == 'splux') ) {
-
-    $guide_min_header = "<div class=\"feature section-minimal-nosearch guide-header\">
-        <div class=\"container text-center minimal-header\">
-            <h5 class=\"mt-3 mt-lg-0 mb-1\"><a href=\"index.php\" class=\"no-decoration default\">" . _("Research Guides") . "</a></h5>
-            <h1>" . $page_title . "</h1>
-            <hr align=\"center\" class=\"hr-panel\">" . $printOption ."<div class=\"favorite-heart\">
-            <div id=\"heart\" title=\"Add to Favorites\" tabindex=\"0\" role=\"button\" data-type=\"favorite-page-icon\"
-                 data-item-type=\"Pages\" alt=\"Add to My Favorites\" class=\"uml-quick-links favorite-page-icon\" >
-            </div></div>
-        </div>
-    </div>
-    <section class=\"section section-half-top\">
-        <div class=\"container\">
-            <div class=\"row\">
-                <div class=\"col-12\"";
-
-    print $guide_min_header;
-}
 ?>
 
 <!-- Guide content display-->
 <div id="tabs" class="hide-tabs-fouc">
-	<div id="main-content" data-subject="<?php echo scrubData($_GET['subject']); ?>" data-url="<?php echo getSubjectsURL(); ?>" data-subject-id="<?php echo $this_id; ?>">
+	<div id="main-content pure-g" data-subject="<?php echo scrubData($_GET['subject']); ?>" data-url="<?php echo getSubjectsURL(); ?>" data-subject-id="<?php echo $this_id; ?>">
 
-		<div id="tab-container" style="visibility: hidden;">
+		<div id="tab-container" class="pure-u-5-24">
             <?php
 			$printer_tabs ='<div class="printer_tabs"><div class="pure-button pure-button-topsearch print-img-tabs"><img src="../assets/images/printer.png" alt="Print" title="Print"></div></div>';
 
@@ -234,7 +196,7 @@ if (isset ($header_type) && ($header_type == 'um-new' || $header_type == 'splux'
             // Only show tabs if there is more than one tab
             if ($multi_tab == TRUE) {
 
-                if (isset ($header_type) && ($header_type == 'um-new' || $header_type == 'splux') ){
+                if (isset ($header_type) && $header_type == 'um-new'){
 
                     //desktop view
                     $container_md_open = "<div class=\"d-none d-md-inline-block\">";
@@ -260,23 +222,24 @@ if (isset ($header_type) && ($header_type == 'um-new' || $header_type == 'splux'
 
                 $bonus_class= "yes-tabs";
 
-                if (isset ($header_type) && ($header_type != 'um-new' || $header_type != 'splux') ){
+                if (isset ($header_type) && $header_type != 'um-new'){
                     print $printer_tabs;
                 }
 
             } else {
                 $bonus_class = "no-tabs";
 
-                if (isset ($header_type) && ($header_type != 'um-new' || $header_type != 'splux') ){
+                if (isset ($header_type) && $header_type != 'um-new'){
                     print $printer_no_tabs;
                 }
             }
+            print $social_and_search;
             ?>
         </div>
 		<!-- end tab-container -->
 
-            <div id="content-after-navs">
-		<div id="tab-body" class="<?php print $bonus_class; ?>">
+            <div id="content-after-navs" class="pure-u-3-4">
+		<div id="tab-body" "<?php print $bonus_class; ?>">
             <?php
             $lobjGuide->outputTabs('public');
 
@@ -289,7 +252,7 @@ if (isset ($header_type) && ($header_type == 'um-new' || $header_type == 'splux'
 </div> <!-- end tabs -->
 
 <?php
-if (isset ($header_type) && ($header_type == 'um-new' || $header_type == 'splux') ) {
+if (isset ($header_type) && $header_type == 'um-new') {
 
     $um_new_section_closing = "</div>
             </div>
@@ -388,7 +351,7 @@ $(function() {
 });
 
 <?php
-if (isset ($header_type) && ($header_type == 'um-new' || $header_type == 'splux') ) { ?>
+if (isset ($header_type) && $header_type == 'um-new') { ?>
 
     // Select2 for Guide Tabs
     $('#select_tabs').select2({
