@@ -11,7 +11,7 @@ date_default_timezone_set('America/Los_Angeles');
 // If you change the name of one of your guide types after you've added content,
 // you will need to update the type field of the subject table so that it matches
 // the new naming.  Adding a new type shouldn't require any changes.
-$guide_types = array( "Department", "Course", "Assignment", "Topic");
+$guide_types = array( "Course", "How-to", "Special topics", "Internal");
 
 // These are the tags that a given record location can have associated with it.  They
 // will be used in a pipe-delimited list in the ctags field of the location table.
@@ -95,7 +95,7 @@ $require_user_columns = array( );
 
 //used to declare which pluslets are activated in new box drop-down
 
-$pluslets_activated = array("Basic", "Heading", "LinkList", "Card", "HTML5Video", "SubjectSpecialist", "4", "Feed", "SocialMedia", "WorldCat", "Catalog", "ArticlesPlus", "GoogleBooks", "GoogleScholar", "GoogleSearch",  "Related", "TOC", "2", "1", "QP", "BookList", "GuideSearch", "GuideSelect", "NewDBs", "NewGuides", "CollectionList", "GuideList", "Experts");
+$pluslets_activated = array("Basic", "Heading", "LinkList", "Card", "HTML5Video", "SubjectSpecialist", "4", "Feed", "WorldCat", "GoogleScholar", "GoogleSearch",  "Related", "TOC", "2", "1", "QP", "BookList", "GuideSearch");
 
 
 // These are used to allow the admin to set different 'themes' for the pluslet titlebar
