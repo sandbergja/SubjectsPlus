@@ -147,12 +147,12 @@ class Video {
         $guide_string = $guideMe->display();
 
     echo "
-    <label for=\"source\">" . _("Video file storage location") . "</label>
+    <label for=\"source\">" . _("Video platform") . "</label>
 $guide_string
 
-<label for=\"foreign_id\">" . _("Foreign ID") . "</label>
+<label for=\"foreign_id\">" . _("Unique identifier on that platform") . "</label>
 <input name=\"foreign_id\" value=\"" . stripslashes($this->_foreign_id) . "\" size=\"15\" />
-  <span class=\"smaller\">* " . ("Enter the embed code id for youtube or vimeo") . "</span><br />
+  <span class=\"smaller\">* " . ("For example, for the video https://youtu.be/lZWyUUDQ5sc, enter lZWyUUDQ5sc") . "</span><br />
 <label for=\"duration\">" . _("Duration in seconds") . "</label>
 <input name=\"duration\" value=\"" . stripslashes($this->_duration) . "\" size=\"5\" />
 <br />";
