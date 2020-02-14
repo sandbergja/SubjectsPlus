@@ -135,7 +135,7 @@ $user_photo_update = TRUE;
    http://www.yoursite.edu/library/sp/
    Make sure to include the trailing slash!
 */
-$BaseURL = "https://sptest2-webapp.azurewebsites.net/";
+$BaseURL = getenv('sp_base_url');
 
 /* Name of this resource, i.e., SubjectsPlus */
 $resource_name = "SubjectsPlus";
@@ -390,7 +390,7 @@ $proxyURL = "https://ezproxy.libweb.linnbenton.edu/login?url=";
    If your path is wrong, but $ck_installed is set to 1, some pages will throw
    errors */
 
-$CKBasePath = "/sp/ckeditor/";
+$CKBasePath = "/ckeditor/";
 
 $CKPath = $_SERVER["DOCUMENT_ROOT"] . $CKBasePath . "ckeditor.php"; // used to call the editor
 
