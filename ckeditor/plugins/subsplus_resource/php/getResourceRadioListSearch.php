@@ -1,5 +1,5 @@
 <?php
-die("Disabled!");
+//die("Disabled!"); // Comment this out because it prevents staff from adding databases to guides
 
 //include subjectsplus config and functions files
 include_once('../../../../control/includes/config.php');
