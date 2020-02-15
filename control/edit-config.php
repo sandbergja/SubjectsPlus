@@ -21,6 +21,21 @@ $use_jquery = array( "ui_styles" );
 
 include( "includes/header.php" );
 
+?>
+
+<!-- LBCC customization, since we do not use this page -->
+Please <a href="https://github.com/lbcclib/SubjectsPlus/blob/master/control/includes/config.php">go to Github to edit this site's configuration</a>.
+<?php
+
+//SubjectsPlus footer
+include( "includes/footer.php" );
+exit;
+
+?>
+<!-- END customization -->
+
+<?php
+
 
 //new instance of config class
 $lobjConfig = new Config();
