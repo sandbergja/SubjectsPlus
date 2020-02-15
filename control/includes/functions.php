@@ -2039,7 +2039,7 @@ function listCollections( $search = "", $display = "default", $show_children = "
 			$col_1 .= "</ul></div>";
 			$col_2 .= "</ul></div>";
 
-			$layout           .= "<div class=\"tab-pane guide_list active\" id=\"section-Collection\" role=\"tabpanel\" aria-labelledby=\"show-Collection\"><div class=\"guide-list-expand\">Expand/hide all</div><div class=\"guide_list_header\"><a name=\"section-Collection\"></a><h2>" . _( "Guide Collections" ) . "</h2></div><div class=\"row\">" . $col_1 . $col_2 . "</div></div>";
+			$layout           .= "<div class=\"tab-pane guide_list active\" id=\"section-Collection\" role=\"tabpanel\" aria-labelledby=\"show-Collection\"><div class=\"guide-list-expand\">Expand/hide all</div><div class=\"guide_list_header\"><a name=\"section-Collection\"></a><h2>" . _( "Guides by metamajor" ) . "</h2></div><div class=\"row\">" . $col_1 . $col_2 . "</div></div>";
 			$list_collections = $layout;
 
 			break;
