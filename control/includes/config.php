@@ -333,7 +333,7 @@ $collection_thumbnail_default = "$AssetPath/images/guide_thumbs/" . $collection_
 // set to TRUE or FALSE
 ////////////////////
 
-$mod_rewrite = FALSE;
+$mod_rewrite = TRUE;
 
 //////////////////////////
 // Connections to Outside Resources
