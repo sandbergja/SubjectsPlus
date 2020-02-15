@@ -280,10 +280,10 @@ include("includes/header_lbcc.php");
     foreach ($guide_types as $key) {
         $guide_type_btns .= "<li><a id=\"show-" . ucfirst($key) . "\" name=\"show$key\" href=\"#section-" . ucfirst($key) . "\">";
         
-        $guide_type_btns .= ucfirst($key) . " Guides</a></li>\n";
+        $guide_type_btns .= ucfirst($key) . " guides</a></li>\n";
     }
 
-    $guide_type_btns .= "<li><a id=\"show-Collection\" name=\"showCollection\" href=\"#section-Collection\">Collections</a></li></ul>";
+    $guide_type_btns .= "<li><a id=\"show-Collection\" name=\"showCollection\" href=\"#section-Collection\">Guides by metamajor</a></li></ul>";
 
 
 
