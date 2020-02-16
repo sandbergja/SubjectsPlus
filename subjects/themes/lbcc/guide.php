@@ -239,7 +239,7 @@ print $tracking_image;
 		<!-- end tab-container -->
 
             <div id="content-after-navs" class="pure-u-3-4">
-		<div id="tab-body" "<?php print $bonus_class; ?>">
+		<div id="tab-body" class="<?php print $bonus_class; ?>">
             <?php
             $lobjGuide->outputTabs('public');
 
