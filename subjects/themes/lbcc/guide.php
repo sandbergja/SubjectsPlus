@@ -185,7 +185,7 @@ print $tracking_image;
 
 <!-- Guide content display-->
 <div id="tabs" class="hide-tabs-fouc">
-	<div id="main-content pure-g" data-subject="<?php echo scrubData($_GET['subject']); ?>" data-url="<?php echo getSubjectsURL(); ?>" data-subject-id="<?php echo $this_id; ?>">
+	<div id="main-content" class="pure-g" data-subject="<?php echo scrubData($_GET['subject']); ?>" data-url="<?php echo getSubjectsURL(); ?>" data-subject-id="<?php echo $this_id; ?>">
 
 		<div id="tab-container" class="pure-u-5-24">
             <?php
