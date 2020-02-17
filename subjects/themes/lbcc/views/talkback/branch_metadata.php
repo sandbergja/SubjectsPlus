@@ -11,14 +11,26 @@ if ( isset( $all_tbtags ) ) {
 
 		// Quick'n'dirty setup email recipients
 		switch ( $set_filter ) {
-			case "main":
-				$page_title    = _( "Comments for Main Library" );
+			case "hoc":
+				$page_title    = _( "Comments for the HOC Library" );
+				$form_action   = "talkback.php?v=$set_filter";
+				$branch_filter = $set_filter;
+				$tb_bonus_css  = "";
+				break;
+			case "bc":
+				$page_title    = _( "Comments for the Benton Center" );
+				$form_action   = "talkback.php?v=$set_filter";
+				$branch_filter = $set_filter;
+				$tb_bonus_css  = "";
+				break;
+			case "albany":
+				$page_title    = _( "Comments for Albany Campus Library" );
 				$form_action   = "talkback.php";
 				$branch_filter = $set_filter;
 				$tb_bonus_css  = "";
 				break;
 			default:
-				$page_title    = _( "Comments for Main Library" );
+				$page_title    = _( "Comments for Albany Campus Library" );
 				$form_action   = "talkback.php";
 				$branch_filter = $set_filter;
 				$tb_bonus_css  = "";
@@ -30,7 +42,7 @@ if ( isset( $all_tbtags ) ) {
 		}
 
 	} else {
-		$page_title    = _( "Comments for Main Library" );
+		$page_title    = _( "Comments for Albany Campus Library" );
 		$form_action   = "talkback.php";
 		$branch_filter = $set_filter;
 		$tb_bonus_css  = "";

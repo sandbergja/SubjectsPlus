@@ -33,7 +33,7 @@ $all_ptags = array("talkback", "faq", "records", "eresource_mgr", "videos", "adm
 // list in the tbtags field of the talkback table. They can be
 // used to sort our route talkback submissions.  The array key is the library name,
 // the key is the email address to which notification should be sent.  No value = send to admin.
-$all_tbtags = array( "main" => "");
+$all_tbtags = array( "albany" => getenv('sp_albany_contact'), "bc" => getenv('sp_bc_contact'), "hoc" => getenv('sp_hoc_contact'));
 
 // These are the tags associated with TalkBack entries.  Used in a pipe-delimited
 // list in the cattags field of the talkback table. They can be
