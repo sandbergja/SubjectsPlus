@@ -118,6 +118,9 @@ function validateSyndeticsImageExists() {
 };
 
 function isbn_in_primo () {
+	# LBCC doesn't use Primo, so here's a link to Find It instead
+	echo (isset($_GET['isbn'])) ? 'http://libfind.linnbenton.edu/catalog?q=' . $_GET['isbn'] : 'https://libfind.linnbenton.edu:4430';
+        exit;
 
 	global $booklist_primo_institution_code;
 	global $booklist_primo_api_key;
