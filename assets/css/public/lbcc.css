@@ -1928,3 +1928,7 @@ a#skiptocontent:focus {
     -webkit-transition: top .1s ease-in;
     transition: top .1s ease-in;
 }
+
+a.ui-tabs-anchor {
+    color: #fff;
+}
