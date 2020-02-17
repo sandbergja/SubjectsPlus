@@ -43,7 +43,7 @@ if ( $_SESSION['user_type_id'] == '1' ) {
 	}
 	// allow user to update their own photo?
 	if ( isset( $user_photo_update ) && $user_photo_update == true ) {
-		$mod_photo = "<p class=\"star-class\"><a href=\"includes/set_picture.php?staff_id=" . $_SESSION['staff_id'] . "\" id=\"load_photo\">" . _( "Update Headshot" ) . "</a></p>";
+		$mod_photo = "<p class=\"star-class\"><a href=\"includes/set_picture.php?staff_id=" . $_SESSION['staff_id'] . "\" id=\"load_photo\">" . _( "Update profile picture" ) . "</a></p>";
 
 	}
 }
