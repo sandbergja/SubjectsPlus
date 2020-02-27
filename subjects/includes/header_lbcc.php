@@ -74,7 +74,7 @@ if (!isset ($noheadersearch)) {
 
 <div class="wrapper-full">
     <div class="pure-g">
-        <div class="pure-u-4-5">
+        <div class="pure-u-11-12">
           <h1><?php print $page_title ?></h1>
           <div class="header-background">
           </div>
