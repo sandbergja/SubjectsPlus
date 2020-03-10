@@ -1,0 +1,12 @@
+/* 
+    Document   : cape_creek_bridge.css
+    Created on : 10March2020
+    Author     : sandbergja
+    Description:  One of the backgrounds for SubjectsPlus
+*/
+
+
+body {
+    background: url(../../images/admin/cape_creek_bridge.jpg);
+    background-size: cover;
+}
