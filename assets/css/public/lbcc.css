@@ -1899,7 +1899,7 @@ a.header-link {
     }
 }
 
-*:focus, a:focus {
+input:focus, button:focus, a:focus {
     outline: none;
     border: 6px solid #45A169 !important;
 }
