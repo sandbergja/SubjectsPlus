@@ -237,7 +237,6 @@ include("includes/header_lbcc.php");
           AND s.active = 1
           AND sub.active = 1
           AND ptags LIKE '%librarian%'
-          AND sub.type = 'Subject'
           GROUP BY s.staff_id
           ORDER BY RAND()
           LIMIT 0,4";
