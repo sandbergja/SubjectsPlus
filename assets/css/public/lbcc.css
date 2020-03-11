@@ -1833,7 +1833,7 @@ h1 {
     font-size: 2em;
     font-weight: 700;
     padding: 0.5em 10px 1em 20px;
-    margin: .5em 0 1em 0;
+    margin-top: 5px;
 
 }
 
@@ -1842,6 +1842,18 @@ h1 {
     background-color: #873D5A;
     height: 40px;
     margin: -50px 0 0 70%;
+}
+
+.all-page-alert {
+    background-color: #873D5A;
+    color: #FFF;
+    padding: 5px;
+    margin-bottom: 35px;
+    width: 80%;
+}
+
+.all-page-alert a, .all-page-alert a:active, .all-page-alert a:hover, .all-page-alert a:visited {
+    color: #FFF;
 }
 
 #footer a.pure-button, .ui-tabs .ui-tabs-nav li {

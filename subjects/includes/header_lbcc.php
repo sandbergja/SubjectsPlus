@@ -76,8 +76,12 @@ if (!isset ($noheadersearch)) {
     <div class="pure-g">
         <div class="pure-u-11-12">
           <h1><?php print $page_title ?></h1>
-          <div class="header-background">
-          </div>
+          <?php if (strpos($_SERVER['REQUEST_URI'], 'talkback') === false): ?>
+            <div class="all-page-alert">
+              <span class="fa fa-commenting-o"></span>
+              Do you have a comment about our new site?  Please <a href="talkback.php">submit it here!</a>
+            </div>
+          <?php endif; ?>
             <div id="content_roof"></div> <!-- end #content_roof -->
             <div id="shadowkiller"></div> <!--end #shadowkiller-->
         
