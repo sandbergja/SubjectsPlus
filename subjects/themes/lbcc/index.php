@@ -162,8 +162,11 @@ include("includes/header_lbcc.php");
            $guide_path = $PublicPath . "guide.php?subject=";
         }
 
-    // We don't want our placeholder
-    if (in_array('Placeholder', $guide_types)) { unset($guide_types[array_search('Placeholder',$guide_types)]); }
+    // We don't want A-Z Only subjects showing up
+    if (in_array('A-Z only', $guide_types)) { unset($guide_types[array_search('A-Z only',$guide_types)]); }
+
+    // We don't need to display Internal guides
+    if (in_array('Internal', $guide_types)) { unset($guide_types[array_search('Internal',$guide_types)]); }
 
     $layout = ""; //init
 
