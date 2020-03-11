@@ -1,0 +1,12 @@
+/* 
+    Document   : tumalo_falls.css
+    Created on : 19Feb2020
+    Author     : sandbergja
+    Description:  One of the backgrounds for SubjectsPlus
+*/
+
+
+body {
+    background: url(../../images/admin/ocean_and_clouds.jpg);
+    background-size: cover;
+}
