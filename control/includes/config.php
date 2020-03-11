@@ -84,7 +84,7 @@ $problem_report_slack_emoji       = "";
 // Available options: 'title', 'department', 'position_number', 'classification', 'priority', 'supervisor', 'tel',
 // 'fax', 'intercom', 'room_number', 'user_type', 'personal_information' (entire Personal Information section),
 // 'emergency_contact' (entire Emergency Contact Information section)
-$omit_user_columns = array( 'department', 'position_number', 'classification', 'priority', 'supervisor', 'fax', 'intercom', 'emergency_contact' );
+$omit_user_columns = array( 'position_number', 'classification', 'priority', 'supervisor', 'fax', 'intercom', 'emergency_contact' );
 
 // This array contains the list of columns that should be required in the user forms
 // First Name, Last Name, Email Address, and Password are always required!
