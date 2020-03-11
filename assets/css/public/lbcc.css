@@ -1936,3 +1936,25 @@ a#skiptocontent:focus {
 a.ui-tabs-anchor {
     color: #fff;
 }
+
+/* emphasize link lists */
+
+ul.link-list-display {
+    list-style: none;
+}
+
+ul.link-list-display li {
+    padding-left: 3px;
+    margin-bottom: 10px;
+}
+
+ul.link-list-display li::before {
+    content: "\f0a9";
+    font-family:'FontAwesome';
+}
+
+ul.link-list-display li a, ul.link-list-display li a:visited, ul.link-list-display li a:hover, ul.link-list-display li a:active  {
+    margin-left: 8px;
+    font-size: 1.5em;
+    color: #005B94;
+}
