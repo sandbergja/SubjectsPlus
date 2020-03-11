@@ -264,7 +264,7 @@ if (isset ($v2styles) && $v2styles == 1) {
 // Load footer file
 ///////////////////////////
 
-include("includes/footer.php");
+include("includes/footer_lbcc.php");
 ?>
 
 <script type="text/javascript" language="javascript">
