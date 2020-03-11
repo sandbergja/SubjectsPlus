@@ -1872,8 +1872,8 @@ h1 {
 }
 
 a.header-link {
-    font-weight: 600;
-    color: #005B94;
+    color: #000;
+    letter-spacing: .4px;
     text-decoration: none;
 }
 
