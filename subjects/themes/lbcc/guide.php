@@ -143,7 +143,7 @@ if ($check_this) {
     header("location:index.php");
 }
 
-$page_title = $subject_name;
+$page_title = $subject_name . ' Guide';
 
 // Do we have an alternate header?
 if (isset ($header_type) && $header_type != 'default') {
