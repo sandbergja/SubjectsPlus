@@ -38,7 +38,7 @@ $all_tbtags = array( "albany" => getenv('sp_albany_contact'), "bc" => getenv('sp
 // These are the tags associated with TalkBack entries.  Used in a pipe-delimited
 // list in the cattags field of the talkback table. They can be
 // used to tag talkbacks with categories.
-$all_cattags = array( "Noise", "Resources", "Computers", "Facilities", "Services");
+$all_cattags = array( "Noise", "Resources", "Computers", "Facilities", "Services", "Web site" );
 
 // To add a new background option (for the admin), create a new css file (e.g.
 // sp/assets/css/green.css ) and then add "green" to this array.  Boom!
