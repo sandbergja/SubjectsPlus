@@ -138,7 +138,7 @@ $user_photo_update = TRUE;
 $BaseURL = getenv('sp_base_url');
 
 /* Name of this resource, i.e., SubjectsPlus */
-$resource_name = "SubjectsPlus";
+$resource_name = "LBCC Library Guides";
 
 /* Name of your college/university/institution */
 $institution_name = "Linn-Benton Community College";
