@@ -239,7 +239,7 @@ include("includes/header_lbcc.php");
           AND ptags LIKE '%librarian%'
           GROUP BY s.staff_id
           ORDER BY RAND()
-          LIMIT 0,4";
+          LIMIT 3";
 
     $statement = $connection->prepare($qexperts);
     $statement->execute();
