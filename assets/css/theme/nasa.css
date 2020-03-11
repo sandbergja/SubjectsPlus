@@ -5,6 +5,9 @@
     Description:  One of the backgrounds for SubjectdPlus
 */
 
+body {
+    background: #e3e1d9 url(../../images/admin/mission_control_lg.jpg) no-repeat center center fixed;
+}
 
 .background {display: block;}
 
