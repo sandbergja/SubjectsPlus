@@ -1826,11 +1826,6 @@ img.pluslet_card_image {
     display: block;
 }
 
-.pure-button, .expert-button {
-    clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%) padding-box;
-    padding-right: 20px;
-}
-
 h1 {
     clip-path: polygon(0 0, 100% 0%, 98% 100%, 0% 100%) border-box;
     background-color: #FDB913;
