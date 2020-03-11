@@ -2,9 +2,31 @@
 <div id="push"></div>
 </div><!--end #wrap-->
 
-<div id="footer">
-    <p class="close">
-
+</div> <!--end #body_inner_wrap-->
+</div> <!--end #pure-u-11-12 -->
+<div id="footer" class="pure-u-1">
+    <div class="pure-g addresses">
+      <div class="pure-u-1 pure-u-md-1-6"></div>
+      <ul class="pure-u-1 pure-u-md-1-6 arrow-list">
+        <li><a href="https://library.linnbenton.edu/contact">Get research help</a></li>
+        <li><a href="https://libcat.linnbenton.edu/eg/opac/myopac/main?redirect_to=%2Feg%2Fopac%2Fmyopac%2Fmain">Check my Library Account</a></li>
+      </ul>
+      <div class="pure-u-1 pure-u-md-1-6">
+LBCC Library<br />
+6500 Pacific Blvd SW</br />
+Albany, Oregon, 97321
+      </div>
+      <div class="pure-u-1 pure-u-md-1-6">
+Healthcare Occupations Center Library<br />
+541-918-8840<br />
+300 Mullins Dr</br />
+Lebanon, OR 97355
+      </div>
+      <div class="pure-u-1 pure-u-md-1-6">
+Benton Center
+      </div>
+    </div>
+    <div class="center">
     <?php 
         if (isset($last_mod) && $last_mod != "") {
             print _("Revised: ") . $last_mod;
@@ -16,14 +38,10 @@
     ?>
     <br />
     Powered by <a href="http://www.subjectsplus.com/">SubjectsPlus</a>
-    </p>
-    <a href="https://library.linnbenton.edu/contact" class="pure-button pure-button-topsearch">Get research help</a>
-    <a href="https://libcat.linnbenton.edu/eg/opac/myopac/main?redirect_to=%2Feg%2Fopac%2Fmyopac%2Fmain" class="pure-button pure-button-topsearch">Check my Library Account</a>
-</div><!-- end #footer div -->
+    </div>
 
 
-</div> <!--end #body_inner_wrap-->
-</div> <!--end pure-u-1-->
+</div> <!--end pure-u-1/#footer-->
 </div> <!--end pure-g-->
 </div> <!-- end #wrapper-full-->
 

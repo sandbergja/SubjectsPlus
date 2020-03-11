@@ -111,7 +111,7 @@ img.main_logo {
     margin: 0 auto -45px;
 }
 
-#push, #footer {
+#push {
         height: 45px;
     }
 
@@ -192,14 +192,17 @@ img.main_logo {
 /* Footer */
 
 #footer {
-    margin: 0;
+    margin-top: 80px;
     padding: 10px 0 0px 0;
-    font-size: .8em;
-    color: #333;
-    border-top: 1px dotted #efefef;
+    color: #fff;
+    background: #005b94;
+    background-image: url('../../images/public/dark_blue_tree.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 300px;
 }
 
-#footer p {
+.center {
     margin: 0;
     line-height: 1.4em;
     text-align: center;
@@ -1930,16 +1933,16 @@ a.ui-tabs-anchor {
 
 /* emphasize link lists */
 
-ul.link-list-display {
+ul.link-list-display, ul.arrow-list {
     list-style: none;
 }
 
-ul.link-list-display li {
+ul.link-list-display li, ul.arrow-list li {
     padding-left: 3px;
     margin-bottom: 10px;
 }
 
-ul.link-list-display li::before {
+ul.link-list-display li::before, ul.arrow-list li::before {
     content: "\f0a9";
     font-family:'FontAwesome';
 }
@@ -1978,3 +1981,11 @@ ul.link-list-display li a, ul.link-list-display li a:visited, ul.link-list-displ
     border-radius: 50%;
 }
 
+#footer ul.arrow-list li a {
+    color: #fff;
+    padding-left: 4px;
+}
+
+.addresses {
+    margin: 25px 0 40px 0;
+}
