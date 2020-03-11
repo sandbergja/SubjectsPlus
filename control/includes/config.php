@@ -11,7 +11,7 @@ date_default_timezone_set('America/Los_Angeles');
 // If you change the name of one of your guide types after you've added content,
 // you will need to update the type field of the subject table so that it matches
 // the new naming.  Adding a new type shouldn't require any changes.
-$guide_types = array( "Course", "How-to", "Special topics", "Internal");
+$guide_types = array( "Course", "How-to", "Special topics", "Internal", "A-Z only" );
 
 // These are the tags that a given record location can have associated with it.  They
 // will be used in a pipe-delimited list in the ctags field of the location table.
