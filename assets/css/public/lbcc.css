@@ -32,7 +32,7 @@ body,
 .pure-g [class *= "pure-u"],
 .pure-g-r [class *= "pure-u"] {
     /* Set you're content font stack here: */
-    font-family: sans-serif;
+    font-family: 'Lato', 'Helvetica', sans-serif;
 }
 
 .ui-widget-header {
@@ -1831,7 +1831,7 @@ h1 {
     font-weight: 700;
     padding: 0.5em 10px 1em 20px;
     margin-top: 5px;
-
+    font-family: 'Merriweather', serif;
 }
 
 .header-background {
