@@ -59,18 +59,12 @@ body {
 
 a,
 a:link  {
-    color: #40659B;
+    color: #1483BB;
 }
 
-a:visited {
-    color: #551A8B;
+a:visited, a:hover {
+    color: #873D5A;
 }
-
-a:hover {
-    color: #cc6666;
-}
-
-
 
 h2 {
   
