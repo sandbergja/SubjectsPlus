@@ -55,7 +55,7 @@ WHERE s.staff_id = sd.staff_id
                                                        WHERE subject.subject_id = staff_subject.subject_id
                                                          AND staff_subject.staff_id = s.staff_id
                                                          AND subject.active = 1
-                                                         AND type = 'Subject') like :search_term)
+                                                         AND type NOT IN ('Internal', 'Special topics')) like :search_term)
 ORDER BY department_sort, d.name, staff_sort DESC, lname";
 
             $db = new Querier;
@@ -155,10 +155,10 @@ ORDER BY department_sort, d.name, staff_sort DESC, lname";
                 where staff.staff_id = ss.staff_id
                 AND ss.subject_id = su.subject_id
                 AND staff.active = 1
-                AND type = 'Subject'
+                AND type NOT IN ('Internal', 'Special topics')
                 AND su.active = '1'
                 AND user_type_id = '1'
-                AND su.type != 'Placeholder'
+                AND su.type NOT IN ('Internal', 'Special topics')
                 AND ptags like '%librarian%'
                 order by lname, fname";
             $db = new Querier;
@@ -177,9 +177,8 @@ ORDER BY department_sort, d.name, staff_sort DESC, lname";
                 $sub_query = "select subject, shortform from subject, staff_subject
                     WHERE subject.subject_id = staff_subject.subject_id
                     AND staff_id =  '$myrow[5]'
-                    AND type = 'Subject'
+                    AND type NOT IN ('Internal', 'Special topics')
                     AND active = '1'
-                    AND type != 'Placeholder'
                     ORDER BY subject";
 
                 /* Select all active records (this is based on a db connection made above) */
@@ -375,10 +374,9 @@ ORDER BY department_sort, d.name, staff_sort DESC, lname";
                 where staff.staff_id = ss.staff_id
                 AND ss.subject_id = su.subject_id
                 AND staff.active = 1
-                AND type = 'Subject'
                 AND su.active = '1'
                 AND user_type_id = '1'
-                AND su.type != 'Placeholder'
+                AND type NOT IN ('Internal', 'Special topics')
                 order by lname, fname";
         $db = new Querier;
         $r = $db->query($q);
@@ -403,9 +401,8 @@ ORDER BY department_sort, d.name, staff_sort DESC, lname";
           $sub_query = "select subject, shortform from subject, staff_subject
                     WHERE subject.subject_id = staff_subject.subject_id
                     AND staff_id =  '$myrow[5]'
-                    AND type = 'Subject'
+                    AND type NOT IN ('Internal', 'Special topics')
                     AND active = '1'
-                    AND type != 'Placeholder'
                     ORDER BY subject";
 
           /* Select all active records (this is based on a db connection made above) */
@@ -447,11 +444,10 @@ ORDER BY department_sort, d.name, staff_sort DESC, lname";
                     staff, staff_subject, subject
             where staff.staff_id = staff_subject.staff_id
             AND staff_subject.subject_id = subject.subject_id
-            AND type = 'Subject'
+            AND type NOT IN ('Internal', 'Special topics')
         AND staff.active = 1
         AND subject.active = 1
         AND staff.user_type_id = 1
-        AND type != 'Placeholder'
             order by subject, lname, fname";
 
         $hf1 = array("label"=>"Subject","hide"=>false,"nosort"=>false);
@@ -630,7 +626,7 @@ ORDER BY department_sort, d.name, staff_sort DESC, lname";
               WHERE subject.subject_id = staff_subject.subject_id
               AND staff_subject.staff_id = $staff_id
               AND subject.active = 1
-              AND type = 'Subject'
+              AND type NOT IN ('Internal', 'Special topics')
               ORDER BY subject";
       //print $q2;
         $db = new Querier;
