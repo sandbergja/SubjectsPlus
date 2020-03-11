@@ -10,7 +10,6 @@
         </p>
         <br>
         <div class="tip">
-            <h2><?php echo _("Need help <strong>now</strong>? <br/><a href=''>Ask a Librarian</a>.</h2>"); ?>
                 <form id="tellus" action="<?php echo $form_action; ?>" method="post" class="pure-form">
                     <div class="talkback_form <?php echo $tb_bonus_css; ?>">
                         <p><strong><?php echo _( "Your comment:" ); ?></strong><br/>
