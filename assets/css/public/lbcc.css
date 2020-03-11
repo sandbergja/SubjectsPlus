@@ -31,8 +31,8 @@ p {margin-bottom: 10px;}
 body,
 .pure-g [class *= "pure-u"],
 .pure-g-r [class *= "pure-u"] {
-    /* Set you're content font stack here: */
     font-family: 'Lato', 'Helvetica', sans-serif;
+    letter-spacing: .1px;
 }
 
 .ui-widget-header {
