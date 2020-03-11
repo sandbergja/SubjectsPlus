@@ -146,12 +146,12 @@ $institution_name = "Linn-Benton Community College";
 /* Code used to create customizations */
 $institution_code = "";
 
-$email_smtp_debug = "";
-$email_host       = "";
-$email_port       = "";
-$email_smtp_auth  = "";
-$email_username   = "";
-$email_password   = "";
+$email_smtp_debug = "0";
+$email_host       = getenv('sp_email_host');
+$email_port       = getenv('sp_email_port');
+$email_smtp_auth  = getenv('sp_email_smtp_auth');
+$email_username   = getenv('sp_email_username');
+$email_password   = getenv('sp_email_password');
 
 
 
