@@ -1947,7 +1947,7 @@ ul.link-list-display li::before, ul.arrow-list li::before {
     font-family:'FontAwesome';
 }
 
-ul.link-list-display li a, ul.link-list-display li a:visited, ul.link-list-display li a:hover, ul.link-list-display li a:active  {
+ul.link-list-display li>a, ul.link-list-display li>a:visited, ul.link-list-display li>a:hover, ul.link-list-display li>a:active  {
     margin-left: 8px;
     font-size: 1.5em;
     color: #005B94;
