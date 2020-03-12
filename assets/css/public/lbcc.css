@@ -383,23 +383,6 @@ img.main_logo {
 /* Print Dialog */
 
 
-div.printer_tabs { /* Print button on guide with tabs */
-    margin: 0 0 0 0;  
-    background-color: transparent;
-    position: absolute;
-    top:-60px !important;
-    width: 36px;
-}
-
-div.printer_no_tabs { /* Print button on guide with NO tabs */
-    margin: -41px 0 0 5px;  
-     background-color: transparent;
-    position: absolute;
-    top: 0 !important;
-    width: 36px;
-
-}
-
 .print-img-tabs, .print-img-tabs:hover { 
     background-image: url("../../images/printer-default.png");
     background-repeat: no-repeat;
