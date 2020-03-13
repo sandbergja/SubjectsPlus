@@ -42,7 +42,7 @@ $all_cattags = array( "Noise", "Resources", "Computers", "Facilities", "Services
 
 // To add a new background option (for the admin), create a new css file (e.g.
 // sp/assets/css/green.css ) and then add "green" to this array.  Boom!
-$all_bgs = array("basic", "flocking", "metamorphosis", "nasa", "tumalo_falls", "cape_creek_bridge", "face_towers", "ocean_and_clouds");
+$all_bgs = array("basic", "cape_creek_bridge", "cool_dog", "face_towers", "flocking", "metamorphosis", "nasa", "ocean_and_clouds", "tumalo_falls");
 
 
 // Talkback options
