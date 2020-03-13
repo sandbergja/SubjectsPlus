@@ -13,17 +13,19 @@
       </ul>
       <div class="pure-u-1 pure-u-md-1-6">
 LBCC Library<br />
-6500 Pacific Blvd SW</br />
-Albany, Oregon, 97321
+6500 Pacific Blvd. SW</br />
+Albany, Oregon 97321
       </div>
       <div class="pure-u-1 pure-u-md-1-6">
 Healthcare Occupations Center Library<br />
 541-918-8840<br />
-300 Mullins Dr</br />
-Lebanon, OR 97355
+300 Mullins Dr.<br />
+Lebanon, Oregon 97355
       </div>
       <div class="pure-u-1 pure-u-md-1-6">
-Benton Center
+Benton Center<br />
+757 NW Polk Ave.<br />
+Corvallis, Oregon 97330
       </div>
     </div>
     <div class="center">
