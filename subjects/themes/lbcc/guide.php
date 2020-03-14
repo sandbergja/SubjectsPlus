@@ -54,11 +54,9 @@ $page_keywords = _("library, research, databases, subjects, search, find");
 $addthis = "";
 
 $social_and_search = '
-<div id="guide_nav_tools">
 <form id="guide_search" class="pure-form"> ' .
 $addthis . 
-'<input id="sp_search" class="find-guide-input ui-autocomplete-input" type="text" placeholder="' . _("Find in Guide") . '" autocomplete="off"/></form>
-</div>
+'<label for="sp_search">' . _("Find in Guide") . '</label><input id="sp_search" class="find-guide-input ui-autocomplete-input" type="text" autocomplete="off"/></form>
 ';
 
 if ($check_this) {
@@ -170,10 +168,8 @@ if (isset ($header_type) && $header_type != 'default') {
 // do we have more than one tab?
 if (count($all_tabs) > 1) {
     $multi_tab = TRUE;
-    $printOption = "<div class=\"printer_tabs\"><i class=\"fas fa-print\" title=\"Print this guide\"></i></div>";
 } else {
     $multi_tab = FALSE;
-    $printOption = "<div class=\"printer_no_tabs\"><i class=\"fas fa-print\" title=\"Print this guide\"></i></div>";
 }
 
 // Add tracking image
@@ -187,11 +183,12 @@ print $tracking_image;
 <div id="tabs" class="hide-tabs-fouc">
 	<div id="main-content" class="pure-g" data-subject="<?php echo scrubData($_GET['subject']); ?>" data-url="<?php echo getSubjectsURL(); ?>" data-subject-id="<?php echo $this_id; ?>">
 
-		<div id="tab-container" class="pure-u-5-24">
+        <div class="pure-u-1-24"></div>
+		<div id="tab-container" class="pure-u-1 pure-u-md-5-24">
             <?php
-			$printer_tabs ='<div class="printer_tabs"><div class="pure-button pure-button-topsearch print-img-tabs"><img src="../assets/images/printer.png" alt="Print" title="Print"></div></div>';
+			$printer_tabs ='<div class="printer_tabs"><button class="print-img-tabs"><span class="fa fa-print"></span> Print this guide</button></div>';
 
-            $printer_no_tabs ='<div class="printer_no_tabs"><div class="pure-button pure-button-topsearch print-img-no-tabs"><img src="../assets/images/printer.png" alt="Print" title="Print"></div></div>';
+            $printer_no_tabs ='<div class="printer_no_tabs"><button class="print-img-no-tabs"><span class="fa fa-print"></span> Print this guide</button></div>';
 			
             // Only show tabs if there is more than one tab
             if ($multi_tab == TRUE) {
@@ -222,6 +219,8 @@ print $tracking_image;
 
                 $bonus_class= "yes-tabs";
 
+                print $social_and_search;
+
                 if (isset ($header_type) && $header_type != 'um-new'){
                     print $printer_tabs;
                 }
@@ -229,11 +228,12 @@ print $tracking_image;
             } else {
                 $bonus_class = "no-tabs";
 
+                print $social_and_search;
+
                 if (isset ($header_type) && $header_type != 'um-new'){
                     print $printer_no_tabs;
                 }
             }
-            print $social_and_search;
             ?>
         </div>
 		<!-- end tab-container -->

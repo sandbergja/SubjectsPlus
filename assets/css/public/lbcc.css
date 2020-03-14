@@ -35,10 +35,6 @@ body,
     letter-spacing: .1px;
 }
 
-.ui-widget-header {
-       background: #cccccc !important;
-}
-
 body {
     margin: 0 auto;
     padding: 0;
@@ -218,19 +214,6 @@ img.main_logo {
 
 /* Guide Tools */
 
-#guide_nav_tools {
-    float: left;
-    margin: 2em 0 1em 40px;
-}
-
-#guide_nav_tools img {
-    margin: 0 .25em;
-    opacity: .6;
-}
-
-#guide_nav_tools img:hover {
-    opacity: 1;
-}
 
 #sp_search {
     margin-left: 1em;
@@ -362,7 +345,11 @@ img.main_logo {
     margin-top: 45px;
 }
 
-#tab-container {margin: -40px 0 0 0; padding: 0;}
+#tab-container {
+    background: #005b94;
+    color: #fff;
+    height: 100%
+}
 
 
 /* if no tabs are being rendered, let's adjust our margins (example: one page guide - no tabs!!) */
@@ -376,36 +363,8 @@ img.main_logo {
      padding: 10px 30px 0 2px;
 }
 
-.ui-tabs-nav.ui-widget-header {border: none !important; background-color: transparent !important; background-image: none !important;}
-
-.ui-tabs .ui-tabs-nav li.child-tab {border-bottom: 1px solid #d3d3d3 !important;}
-
 /* Print Dialog */
 
-
-.print-img-tabs, .print-img-tabs:hover { 
-    background-image: url("../../images/printer-default.png");
-    background-repeat: no-repeat;
-    background-position: 50% 65%;
-    cursor: pointer;    
-    padding: 2px 5px;
-    background-color: #333 !important; 
-    border-radius: 8px;
-    border: none;
-    opacity: .6;
-}
-
-.print-img-no-tabs, .print-img-no-tabs:hover { 
-    background-image: url("../../images/printer-default.png");
-    background-repeat: no-repeat;
-    background-position: 50% 65%;
-    cursor: pointer;    
-    padding: 2px 6px;
-    background-color: #333 !important; 
-    border-radius: 8px;
-    border: none;
-    opacity: .6;
-}
 
 .printDialog {
     margin: 10px;
@@ -1089,10 +1048,6 @@ div.video_thumb img {
     border: none !important;
 }
 
-.ui-tabs .ui-tabs-panel {
-    padding: 1em 0em !important;
-}
-
 .ui-state-active {
     background: #79A4D4 !important;
 }
@@ -1692,28 +1647,10 @@ ul.guide-listing li .fa {color: #666; font-size:0.9em; cursor: pointer; margin-r
         width:30%;
     }
 
-    #guide_nav_tools {
-        float: right !important;
-        margin: 0 0 0 0;
+    #guide_search {
+        margin: 20px auto 20px auto;
     }
 
-    div.printer_tabs { /* Print button on guide with tabs */
-        margin: 0 0 0 0;  
-        background-color: transparent;
-        position: absolute;
-        top:-46px !important;
-        right: 305px;
-        width: 36px;
-    }
-
-    div.printer_no_tabs { /* Print button on guide with NO tabs */
-    margin: -28px 0 0 5px;  
-     background-color: transparent;
-    position: absolute;
-    top: 0 !important;
-    right: 305px !important;
-    width: 36px;
-    }
 
     .ui-widget-header {
        background: url("../shared/images/ui-bg_highlight-soft_75_cccccc_1x100.png") repeat-x scroll top left #cccccc !important;
@@ -1828,18 +1765,6 @@ h1 {
 
 .all-page-alert a, .all-page-alert a:active, .all-page-alert a:hover, .all-page-alert a:visited {
     color: #FFF;
-}
-
-#footer a.pure-button, .ui-tabs .ui-tabs-nav li {
-    background-color: #873D5A;
-    color: #FFF;
-    position: relative;
-    bottom: 20px;
-    top: 80%;
-    font-size: 1em;
-    margin: 10px auto 10px 30px;
-    box-shadow: 5px 3px #FDB913;
-    max-width: 80%;
 }
 
 .button-top, a.button-top {
@@ -1971,4 +1896,29 @@ ul.link-list-display li>a, ul.link-list-display li>a:visited, ul.link-list-displ
 
 .addresses {
     margin: 25px 0 40px 0;
+}
+
+button.print-img-tabs, button.print-img-no-tabs {
+    border: none;
+    background-color: inherit;
+    color: inherit;
+}
+
+#tab-container > form, .tab-container > div {
+    margin: 5px 2px 2px 10px;
+}
+
+#tab-container > ul {
+    list-style: none;
+    border-bottom: 2px solid #27aae1;
+}
+
+#tab-container ul a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.ui-tabs-nav.ui-widget-header {
+    background-color: transparent !important;
+    background-image: none !important;
 }
