@@ -195,7 +195,7 @@ img.main_logo {
     background-image: url('../../images/public/dark_blue_tree.png');
     background-repeat: no-repeat;
     background-position: right;
-    height: 300px;
+    min-height: 300px;
 }
 
 .center {
