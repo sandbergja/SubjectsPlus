@@ -2072,11 +2072,9 @@ ORDER BY cs.sort";
 	$colour1 = "oddrow";
 	$colour2 = "evenrow";
 
-	$list_guides = "<table class=\"item_listing\" width=\"98%\">";
+	$list_guides = "<div class=\"separate-children\">";
 
 	foreach ( $rCollection as $key => $value ) {
-
-		$row_colour = ( $key % 2 ) ? $colour1 : $colour2;
 
 		$guide_location = $guide_path . $value[4];
 		$thumbnail      = $AssetPath . "images/guide_thumbs/$value[4].jpg";
@@ -2090,14 +2088,14 @@ ORDER BY cs.sort";
 
 		// Stick in the title if it's the first row
 		if ( $key == 0 ) {
-			$list_guides .= "<span id=\"collection_parent_title\">$value[1]</span>";
+			$list_guides .= "<h2>$value[1]</h2>";
 		}
 
-		$list_guides .= "<tr class=\"zebra $row_colour\">
-    <td><div class=\"d-flex flex-row flex-nowrap mb-3\"><div class=\"collection-image\"><img class=\"staff_photo\" title=\"" . $value[3] . "\" alt=\"" . $value[3] . "\" src=\"$thumbnail\" /></div><div><h4><a href=\"$guide_location\" class=\"default\">" . htmlspecialchars_decode( $value[3] ) . "</a></h4>{$value[6]}</div></div></td></tr>";
+		$list_guides .= "<div class=\"pure-g\">
+    <div class=\"pure-u-1-3\"><div class=\"expert-img\"><img class=\"staff_photo_full collection-photo\" alt=\"\" src=\"$thumbnail\" /></div></div><div class=\"pure-u-2-3\"><h3><a href=\"$guide_location\" class=\"default\">" . htmlspecialchars_decode( $value[3] ) . "</a></h3>{$value[6]}</div></div>";
 	}
 
-	$list_guides .= "</table>";
+	$list_guides .= "</div>";
 
 	return $list_guides;
 }

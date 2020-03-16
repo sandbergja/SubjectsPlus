@@ -131,7 +131,7 @@ if (isset($_GET["d"])) {
   $guide_results = listCollections($search);
 }
 
-$layout = makePluslet("", $guide_results, "","",FALSE);
+$layout = $guide_results; //makePluslet("", $guide_results, "","",FALSE);
 
 // End CHC hack
 
