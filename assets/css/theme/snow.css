@@ -1,0 +1,12 @@
+/* 
+    Document   : snow.css
+    Created on : 17Mar2020
+    Author     : sandbergja
+    Description:  One of the backgrounds for SubjectsPlus
+*/
+
+
+body {
+    background: url(../../images/admin/snow.jpg);
+    background-size: cover;
+}

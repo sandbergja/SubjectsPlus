@@ -1,0 +1,12 @@
+/* 
+    Document   : books.css
+    Created on : 17Mar2020
+    Author     : sandbergja
+    Description:  One of the backgrounds for SubjectsPlus
+*/
+
+
+body {
+    background: url(../../images/admin/books.jpg);
+    background-size: cover;
+}
