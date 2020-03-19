@@ -35,6 +35,12 @@ class Pluslet_FindIt extends Pluslet {
     }
 
     protected function onEditOutput() {
+        if($this->_extra == "") {
+            $this->_extra = array();
+        } else {
+            $this->_extra = json_decode( $this->_extra, true );
+        }
+
         $this->_body = "<p class=\"faq-alert\">" . _("Click 'Save' to view your search box.") . "</p>";
     }
 }

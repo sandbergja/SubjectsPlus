@@ -1937,3 +1937,37 @@ button.print-img-tabs, button.print-img-no-tabs {
 .collection-photo {
     margin-left: 30px;
 }
+
+/* For the Contact Us pluslet */
+
+.contact-square {
+  height:200px;
+  text-align:center;
+}
+
+.contact-square .fa {
+  font-size: 40px !important;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.dark-blue-background, a.dark-blue-background, a.dark-blue-background:hover, a.dark-blue-background:visited, a.dark-blue-background:active {
+  background:#005B94;
+  color:#fff;
+}
+
+.green-background, a.green-background, a.green-background:hover, a.green-background:visited, a.green-background:active {
+  background:#45A169;
+  color:#000;
+}
+
+.maroon-background, a.maroon-background, a.maroon-background:hover, a.maroon-background:visited, a.maroon-background:active {
+  background:#873D5A;
+  color: #fff;
+}
+
+.yellow-background, a.yellow-background, a.yellow-background:hover, a.yellow-background:visited, a.yellow-background:active {
+  background:#FDB913;
+  color:#000;
+}
+
