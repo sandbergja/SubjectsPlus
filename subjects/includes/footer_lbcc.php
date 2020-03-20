@@ -32,14 +32,11 @@ Corvallis, Oregon 97330
     <?php 
         if (isset($last_mod) && $last_mod != "") {
             print _("Revised: ") . $last_mod;
-        } else {
-            print _("This page maintained by: ") . "<a href=\"mailto:$administrator_email\">
-    $administrator</a>";
         }
 
     ?>
     <br />
-    Powered by <a href="http://www.subjectsplus.com/">SubjectsPlus</a>
+    Powered by <a class="dark-blue-background" href="http://www.subjectsplus.com/">SubjectsPlus</a>
     </div>
 
 
