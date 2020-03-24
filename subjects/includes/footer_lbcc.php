@@ -7,10 +7,16 @@
 <div id="footer" class="pure-u-1">
     <div class="pure-g addresses">
       <div class="pure-u-1 pure-u-md-1-6"></div>
-      <ul class="pure-u-1 pure-u-md-1-6 arrow-list">
-        <li><a href="https://library.linnbenton.edu/contact">Get research help</a></li>
-        <li><a href="https://libcat.linnbenton.edu/eg/opac/myopac/main?redirect_to=%2Feg%2Fopac%2Fmyopac%2Fmain">Check my Library Account</a></li>
-      </ul>
+      <div class="pure-u-1 pure-u-md-1-6">
+        <ul class="arrow-list">
+          <li><a href="https://library.linnbenton.edu/contact">Get research help</a></li>
+          <li><a href="https://libcat.linnbenton.edu/eg/opac/myopac/main?redirect_to=%2Feg%2Fopac%2Fmyopac%2Fmain">Check my Library Account</a></li>
+        </ul>
+        <a href="https://www.facebook.com/lbcclibrary/" class="dark-blue-background">
+          <span class="fa fa-facebook-square fa-3x" aria-label="Facebook"></span></a>
+        <a href="https://www.instagram.com/lbcc_library/" class="dark-blue-background">
+          <span class="fa fa-instagram fa-3x" aria-label="Instagram"></span></a>
+      </div>
       <div class="pure-u-1 pure-u-md-1-6">
 LBCC Library<br />
 6500 Pacific Blvd. SW</br />
