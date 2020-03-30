@@ -37,11 +37,9 @@ if ($this->_contact_type) {
     Email: <?php echo $org['email'] ?>
   </a>
   <div class="pure-u-1-6"></div>
-<!-- Commenting out zoom link for Spring Break
   <a href="https://linnbenton.zoom.us/j/243933025" class="pure-u-5-12 contact-square dark-blue-background">
     <span class="fa fa-laptop"></span>
     Zoom
   </a>
--->
 </div>
 
