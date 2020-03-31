@@ -1929,17 +1929,6 @@ button.print-img-tabs, button.print-img-no-tabs {
 
 /* For the Contact Us pluslet */
 
-.contact-square {
-  height:200px;
-  text-align:center;
-}
-
-.contact-square .fa {
-  font-size: 40px !important;
-  width: 100%;
-  margin-top: 30px;
-}
-
 .dark-blue-background, a.dark-blue-background, a.dark-blue-background:hover, a.dark-blue-background:visited, a.dark-blue-background:active {
   background:#005B94;
   color:#fff;
@@ -1958,5 +1947,13 @@ button.print-img-tabs, button.print-img-no-tabs {
 .yellow-background, a.yellow-background, a.yellow-background:hover, a.yellow-background:visited, a.yellow-background:active {
   background:#FDB913;
   color:#000;
+}
+
+.contact-circle {
+  border-radius: 100%;
+  width: 1.3em;
+  height: 1.5em;
+  line-height: 1.5em !important;
+  padding-left: .2em;
 }
 

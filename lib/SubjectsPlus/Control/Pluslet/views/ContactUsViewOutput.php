@@ -14,32 +14,30 @@ if ($this->_contact_type) {
 
 
 <h2>Contact the <?php echo $org['title'] ?></h2>
-<div class="pure-g">
-  <a href="tel:<?php echo $org['phone'] ?>" class="pure-u-5-12 contact-square maroon-background">
-    <span class="fa fa-phone"></span>
-    Call: <?php echo $org['formatted_phone'] ?>
-  </a>
-  <div class="pure-u-1-6"></div>
+<a href="tel:<?php echo $org['phone'] ?>" class="contact-pluslet-link">
+  <span class="fa fa-phone fa-2x maroon-background contact-circle"></span>
+  Call: <?php echo $org['formatted_phone'] ?>
+</a><br />
 <?php if ('shd' === $this->_contact_type): ?>
-  <a href="sms:15417047001" class="pure-u-5-12 contact-square yellow-background">
-    <span class="fa fa-commenting"></span>
+  <a href="sms:15417047001" class="contact-pluslet-link">
+    <span class="fa fa-commenting fa-2x yellow-background contact-circle"></span>
     Text: 541-704-7001
   </a>
 <?php else: ?>
-  <a href="https://www.questionpoint.org/crs/servlet/org.oclc.admin.BuildForm?&page=frame&institution=13983&type=2&language=1" class="pure-u-5-12 contact-square yellow-background"><span class="fa fa-commenting"></span>Chat</a>
+<a href="https://www.questionpoint.org/crs/servlet/org.oclc.admin.BuildForm?&page=frame&institution=13983&type=2&language=1" class="contact-pluslet-link">
+  <span class="fa fa-commenting fa-2x yellow-background contact-circle"></span>
+  Chat
+</a>
 <?php endif; ?>
 
-</div>
-
-<div class="pure-g">
-  <a href="mailto:<?php echo $org['email'] ?>" class="pure-u-5-12 contact-square green-background">
-    <span class="fa fa-envelope"></span>
-    Email: <?php echo $org['email'] ?>
-  </a>
-  <div class="pure-u-1-6"></div>
-  <a href="https://linnbenton.zoom.us/j/243933025" class="pure-u-5-12 contact-square dark-blue-background">
-    <span class="fa fa-laptop"></span>
-    Zoom
-  </a>
-</div>
+<br />
+<a href="mailto:<?php echo $org['email'] ?>" class="contact-pluslet-link">
+  <span class="fa fa-envelope fa-2x green-background contact-circle"></span>
+  Email: <?php echo $org['email'] ?>
+</a>
+<br />
+<a href="https://linnbenton.zoom.us/j/243933025" class="contact-pluslet-link">
+  <span class="fa fa-laptop fa-2x dark-blue-background contact-circle"></span>
+  Zoom
+</a>
 

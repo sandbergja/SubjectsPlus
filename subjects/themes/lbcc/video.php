@@ -141,8 +141,8 @@ if ($num_rows) {
     $item_duration .= "$secs seconds";
 
     $display .= "<div class=\"vid_container\">
-            $thumbnail_medium <h3 class=\"ajax\" href=\"$location\">$safe_title</h3><p class=\"runtime\">$item_duration</p><a class=\"details_details\">More about this video</a>
-          <div class=\"list_bonus\">$item_blurb</div>
+            $thumbnail_medium <h3 class=\"ajax\" href=\"$location\">$safe_title</h3><p class=\"runtime\">$item_duration</p><!--<a class=\"details_details\">More about this video</a>-->
+          <div class=\"details_details\">$item_blurb</div>
             </div>";
   }
 } else {
