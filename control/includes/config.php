@@ -95,7 +95,7 @@ $require_user_columns = array( );
 
 //used to declare which pluslets are activated in new box drop-down
 
-$pluslets_activated = array("Basic", "Heading", "LinkList", "FindIt", "ContactUs", "Card", "HTML5Video", "SubjectSpecialist", "4", "Feed", "WorldCat", "GoogleScholar", "GoogleSearch",  "Related", "TOC", "2", "1", "QP", "BookList", "GuideSearch");
+$pluslets_activated = array("Basic", "Heading", "LinkList", "FindIt", "ContactUs", "Card", "HTML5Video", "SubjectSpecialist", "4", "Feed", "AccessibilityStatement", "WorldCat", "GoogleScholar", "GoogleSearch",  "Related", "TOC", "2", "1", "QP", "BookList", "GuideSearch");
 
 
 // These are used to allow the admin to set different 'themes' for the pluslet titlebar
