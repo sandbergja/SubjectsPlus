@@ -1,8 +1,8 @@
 <?php
 $orgs = [
   'hoc' => ['title' => 'HOC Library', 'phone' => '15419188840', 'formatted_phone' => '541-918-8840', 'email' => 'sobotkc@linnbenton.edu'],
-  'circ' => ['title' => 'LBCC Library', 'phone' => '15419174638', 'formatted_phone' => '541-917-4638', 'email' => 'libref@linnbenton.edu'],
-  'ref' => ['title' => 'LBCC Library', 'phone' => '15419174645', 'formatted_phone' => '541-917-4645', 'email' => 'libref@linnbenton.edu'],
+  'circ' => ['title' => 'LBCC Library Circulation Services', 'phone' => '15419174638', 'formatted_phone' => '541-917-4638', 'email' => 'libcirc@linnbenton.edu'],
+  'ref' => ['title' => 'LBCC Library Reference Services', 'phone' => '15419174645', 'formatted_phone' => '541-917-4645', 'email' => 'libref@linnbenton.edu'],
   'shd' => ['title' => 'Student Help Desk', 'phone' => '15419174630', 'formatted_phone' => '541-917-4630', 'email' => 'student.helpdesk@linnbenton.edu'],
 ];
 if ($this->_contact_type) {
