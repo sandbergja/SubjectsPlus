@@ -11,12 +11,12 @@
 		    <option>Library Web site</option>
                  </select>
 
-                 <input name="q" type="text" class="input-lg search-query" aria-label="Search query">
+                 <input name="q" type="text" class="findit-search" aria-label="Search query">
 
 		    <input name="show_articles" type="hidden" value="true" />
 			<input name="detail_record_view" type="hidden" value="1" />
 			<input name="locg" type="hidden" value="8"/>
-			<button type="submit" class="btn btn-lg btn-success"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search</button>
+			<button type="submit" class="yellow-background"><span class="fa fa-search fa-2x" aria-label="Search"></span></button>
 
 		</fieldset>
 	</form>

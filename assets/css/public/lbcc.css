@@ -1957,3 +1957,10 @@ button.print-img-tabs, button.print-img-no-tabs {
   padding-left: .2em;
 }
 
+/* FindIt Pluslet */
+.findit-search {
+  border: 2px solid #e1e0dc;
+  font-size: 1.5em;
+  color: #000;
+  background: #f4f4f4; 
+}
