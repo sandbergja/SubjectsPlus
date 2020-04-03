@@ -1,5 +1,7 @@
 <div class="row">
    <div style="margin:0 auto;width:90%;">
+      <img src="/assets/images/public/findit.png" alt="FindIt" />
+      <br />
 
       <form id="search-box" class="form-search" method="get" action="https://libfind.linnbenton.edu:4430/search" onsubmit="route_search(event)">
 	     <fieldset style="margin:0 auto;" <?php echo (strpos($_SERVER['REQUEST_URI'], 'control')) ? 'disabled="disabled"' : '' ?>>
@@ -16,7 +18,7 @@
 		    <input name="show_articles" type="hidden" value="true" />
 			<input name="detail_record_view" type="hidden" value="1" />
 			<input name="locg" type="hidden" value="8"/>
-			<button type="submit" class="yellow-background"><span class="fa fa-search fa-2x" aria-label="Search"></span></button>
+			<button type="submit" class="maroon-background"><span class="fa fa-search fa-2x" aria-label="Search"></span></button>
 
 		</fieldset>
 	</form>

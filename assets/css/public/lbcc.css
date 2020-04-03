@@ -1960,8 +1960,8 @@ button.print-img-tabs, button.print-img-no-tabs {
 
 /* FindIt Pluslet */
 .findit-search {
-  border: 2px solid #e1e0dc;
+  border: 3px solid #873d5a;
   font-size: 1.5em;
   color: #000;
-  background: #f4f4f4; 
+  background: #F9F5F7;
 }
