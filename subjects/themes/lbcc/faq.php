@@ -137,7 +137,7 @@ if (isset($_REQUEST['searchterm']) && $_REQUEST['searchterm'] && $_REQUEST['sear
     $displaytype = "single";
     $page_title = "Library FAQs";
 } else {
-    $displaytype = "splashpage";
+    $displaytype = "all";
     $page_title = "Library FAQs";
 }
 
@@ -308,7 +308,9 @@ foreach ($collections_result as $myrow1) {
 // print "<p style=\"background-color: #ffffcf;\"><strong>Note:</strong>  $num_faqs FAQs displayed.  Search <strong>all FAQs</strong> with the boxes to the right.</p><br />";
 
 
-if (isset($index)) {
+//if (isset($index)) { 
+// Don't display this note, since it displays more often than it should
+if (0) {
 
     print "
 		<div class=\"pluslet_simple\">
@@ -373,7 +375,7 @@ print $results; ?>
 </div>
 <?php
 
-include("includes/footer.php");
+include("includes/footer_lbcc.php");
 
 ?>
 <script type="text/javascript">
