@@ -188,7 +188,7 @@ $layout = $guide_results; //makePluslet("", $guide_results, "","",FALSE);
 // Load footer file
 ///////////////////////////
 
-include("includes/footer.php");
+include("includes/footer_lbcc.php");
 
 ?>
 

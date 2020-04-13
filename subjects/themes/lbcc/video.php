@@ -196,7 +196,7 @@ include("includes/header_lbcc.php");
 // Load footer file
 ///////////////////////////
 
-include("includes/footer.php");
+include("includes/footer_lbcc.php");
 ?>
 
 <script type="text/javascript" language="javascript">

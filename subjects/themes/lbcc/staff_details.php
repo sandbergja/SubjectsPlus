@@ -176,5 +176,5 @@ include("includes/header_lbcc.php");
 // Footer
 ///////////
 
-include("includes/footer.php");
+include("includes/footer_lbcc.php");
 ?>

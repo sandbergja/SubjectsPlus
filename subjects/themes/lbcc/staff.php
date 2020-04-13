@@ -82,6 +82,6 @@ include("includes/header.php");
 // Footer
 ///////////
 
-include("includes/footer.php");
+include("includes/footer_lbcc.php");
 
 ?>
