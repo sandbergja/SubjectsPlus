@@ -23,7 +23,7 @@ $all_ctags = array( "Articles", "Ebooks", "Español", "Images", "Newspapers", "S
 // as only Vimeo and YouTube API integration is in place
 // vtags are quick and dirty way of creating collections; see $all_ctags etc. above
 $video_storage_types = array("Vimeo", "YouTube", "Local");
-$all_vtags = array( "collections", "instruction", "events", "exhibit", "services");
+$all_vtags = array( "databases", "searching", "collections", "information_literacy", "events", "displays", "services");
 
 // These are the tags that denote permissions for a staff member.  They
 // will be used in a pipe-delimited list in the ptags field of the staff table.
