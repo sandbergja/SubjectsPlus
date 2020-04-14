@@ -308,14 +308,11 @@ foreach ($collections_result as $myrow1) {
 // print "<p style=\"background-color: #ffffcf;\"><strong>Note:</strong>  $num_faqs FAQs displayed.  Search <strong>all FAQs</strong> with the boxes to the right.</p><br />";
 
 
-//if (isset($index)) { 
-// Don't display this note, since it displays more often than it should
-if (0) {
+if (isset($index)) { 
 
     print "
 		<div class=\"pluslet_simple\">
 
-		<div class=\"faq_filter\"><a href=\"faq.php\">" . _("Note:  Not all FAQs displayed.  Search or browse for more ") . " &raquo;</a></div>
 		$index\n";
     print "</div>";
 }
