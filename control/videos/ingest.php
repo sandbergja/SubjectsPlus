@@ -36,7 +36,7 @@ if (isset($_POST['ingest_source'])) {
 // our form //
 ////////////
 
-$ingest_form = "<p>" . _("Select a source you wish to pull in video metadata from.  Enter the name of the user account, followed by the source.") . "</p><br />";
+$ingest_form = "<p>" . _("Select a source you wish to pull in video metadata from.  Enter the name of the user account, followed by the source. Use UCrguSgXgKsu3ZSwFy6Ughxw for libref youtube account") . "</p><br />";
 
 $ingest_form .= "<form method=\"post\" action=\"\">
   <p><strong>" .
@@ -258,7 +258,7 @@ function seekVids($source, $vid_user_name, $start_index=1, $vid_count=0) {
 
     case "YouTube":
       // API endpoint
-      $api_endpoint = 'https://www.youtube.com/feeds/videos.xml?user=' . $vid_user_name;
+      $api_endpoint = 'https://www.youtube.com/feeds/videos.xml?channel_id=' . $vid_user_name;
       $vid_data = $api_endpoint;
       $base = "entry";
       break;
