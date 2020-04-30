@@ -61,7 +61,7 @@ $original_photo = "
 
 
 $upload_box = "<div class=\"box no_overflow\">
-<p>" . _("Once you click upload, the current image will be replaced.  <strong>Note:</strong>  Images should be 200x150 px.") . "</p>
+<p>" . _("Once you click upload, the current image will be replaced.  <strong>Note:</strong>  Images should be in JPEG format, 200x150 px.") . "</p>
 <br />
 <form name=\"upload_form\" enctype=\"multipart/form-data\" method=\"post\" action=\"set_image.php\" />
 <input type=\"hidden\" name=\"video_id\" value=\"$video_id\" />
