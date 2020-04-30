@@ -42,7 +42,8 @@ Corvallis, Oregon 97330
 
     ?>
     <br />
-    Powered by <a class="dark-blue-background" href="http://www.subjectsplus.com/">SubjectsPlus</a>
+    Powered by <a class="dark-blue-background" href="http://www.subjectsplus.com/">SubjectsPlus</a> -
+    <a class="dark-blue-background" href="https://libhelp.linnbenton.edu/control">Library staff login</a>
     </div>
 
 
