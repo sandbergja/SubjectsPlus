@@ -20,7 +20,7 @@ if ($this->_contact_type) {
 </a><br />
 <?php if ('shd' === $this->_contact_type): ?>
   <a href="sms:15417047001" class="contact-pluslet-link">
-    <span class="fa fa-commenting fa-2x yellow-background contact-circle"></span>
+    <span class="fa fa-mobile fa-2x yellow-background contact-circle"></span>
     Text: 541-704-7001
   </a>
 <?php else: ?>
@@ -40,4 +40,11 @@ if ($this->_contact_type) {
   <span class="fa fa-laptop fa-2x dark-blue-background contact-circle"></span>
   Zoom
 </a>
+<br />
+<?php if ('ref' === $this->_contact_type): ?>
+  <a href="sms:16506676620" class="contact-pluslet-link">
+    <span class="fa fa-mobile fa-2x maroon-background contact-circle"></span>
+    Text: (650) 667-6620
+  </a>
+<?php endif; ?>
 
