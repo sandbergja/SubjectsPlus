@@ -1796,6 +1796,12 @@ a.header-link {
     }
 }
 
+/* Here's an invisible border, so that the focus indicator
+doesn't shift things around on the screen unexpectedly */
+input, button, a[href] {
+    border: 6px solid transparent;
+}
+
 input:focus, button:focus, a:focus {
     outline: none;
     border: 6px solid #45A169 !important;
