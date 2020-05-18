@@ -12,17 +12,13 @@ SubjectsPlus is a a LAMP/WAMP application that allows you to manage a number of 
 It was originally developed at the Ithaca College Library, and primary development is now taking place at the University of Miami Libraries.
 It is made available under the GNU GPL.
 
-## Website, Documentation, Support
-
-* [Project Homepage](http://www.subjectsplus.com/)
-* [Documentation](http://www.subjectsplus.com/wiki)
-* [Mailing List](http://groups.google.com/group/subjectsplus)
+This repository includes a few customizations for Linn-Benton Community College
 
 ## Requirements
 
-* PHP >= to 5.3 - 5.6 
-* MySQL >= 4 - 5.6
-* Web server -- usually Apache, but some people have SubjectsPlus running on IIS
+* PHP >= 7.3
+* MySQL = 5.7
+* Web server -- Apache
 * JavaScript enabled for the admin to work properly. 
 
 If you run into any missing/weird functionality, check that the following extensions are enabled for PHP:
@@ -38,5 +34,6 @@ If you run into any missing/weird functionality, check that the following extens
 
 If you have MySQL 5.7 you must disable ONLY_FULL_GROUP_BY permanently. Please refer to this [stack overflow](https://stackoverflow.com/questions/23921117/disable-only-full-group-by) issue.
 
-## Installation
-Visit the [wiki](http://www.subjectsplus.com/wiki) for installation instructions.
+## Docker
+
+Run `docker-compose up -d --build` to get a dev environment really fast!  You will need to add data to the database manually at this point.
