@@ -1152,8 +1152,7 @@ width:55px;
 
 .staff-details {list-style-type: none; margin: 0 !important; padding: 0; display: inline-block; }
 .staff-details h4 {font-weight: bold; margin-bottom: 6px;}
-.staff-details li {margin: 0 !important; display: block !important; white-space: pre-wrap;   white-space: -moz-pre-wrap;   
-   white-space: -o-pre-wrap;  word-wrap: break-word; }
+.staff-details li {margin: 0 !important; display: block !important;}
 
 .staff-social {padding: .2em 0.2em .2em 0; font-size: 26px; display: inline-block;}
 .staff-social  a {text-decoration: none; color: rgba(51,51,51,0.7) !important;}
