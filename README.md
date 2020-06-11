@@ -36,4 +36,6 @@ If you have MySQL 5.7 you must disable ONLY_FULL_GROUP_BY permanently. Please re
 
 ## Docker
 
-Run `docker-compose up -d --build` to get a dev environment really fast!  You will need to add data to the database manually at this point.
+Run `docker-compose up -d --build` to get a dev environment really fast!  You will need to add data to the database with this command:
+
+    docker exec -i subjectsplus_db_1 mysql -u subjectsplusdev -pdevpass subjectsplus < file_to_import.sql
