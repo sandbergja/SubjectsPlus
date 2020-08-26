@@ -1,0 +1,21 @@
+<mat-toolbar color="primary">
+  <a href="/">SubjectsPlus</a>
+  <button mat-button [matMenuTriggerFor]="recordMenu" class="mat-button">Records</button>
+  <mat-menu #recordMenu="matMenu">
+    <a routerLink="/records/record" mat-menu-item>New Record</a>
+    <a mat-menu-item>Browse Items</a>
+    <a mat-menu-item>Databases By Subject</a>
+  </mat-menu>
+  <button mat-button class="mat-button">Guides</button>
+  <button mat-button class="mat-button">FAQs</button>
+  <button mat-button class="mat-button">TalkBack</button>
+  <button mat-button class="mat-button">Videos</button>
+  <button mat-button class="mat-button">Admin</button>
+<input type="text">
+<button class="mat-button">
+    <mat-icon aria-hidden="true">search</mat-icon>
+    Search
+</button>
+
+</mat-toolbar>
+  

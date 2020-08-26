@@ -1,0 +1,32 @@
+<h1>Record editor</h1>
+<form [formGroup]="recordForm">
+    <mat-form-field>
+        <mat-label>Prefix</mat-label>
+        <input matInput formControlName="prefix">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Title</mat-label>
+        <input matInput formControlName="title">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Alternate Title</mat-label>
+        <input matInput formControlName="alternateTitle">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Description</mat-label>
+        <textarea matInput formControlName="description"></textarea>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Internal Notes</mat-label>
+        <textarea matInput formControlName="internalNotes"></textarea>
+    </mat-form-field>
+
+    <!-- TODO: add sourceType dropdown -->
+    <!-- TODO: add subjects dropdown -->
+
+
+</form>
