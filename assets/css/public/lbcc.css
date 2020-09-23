@@ -1801,6 +1801,17 @@ input, button, a[href] {
     border: 6px solid transparent;
 }
 
+.pluslet_body a[href] {
+    border: none;
+}
+
+.pluslet_body a[href]:before {
+    content: "\f0a9";
+     font-family: 'FontAwesome';
+    margin-right: 2px;
+}
+
+
 input:focus, button:focus, a:focus {
     outline: none;
     border: 6px solid #45A169 !important;
@@ -1855,6 +1866,12 @@ ul.link-list-display li>a, ul.link-list-display li>a:visited, ul.link-list-displ
     margin-left: 8px;
     font-size: 1.5em;
     color: #005B94;
+}
+
+/* Don't show the link arrow if there already is one, or if the link has focus */
+ul.link-list-display li a[href]:before, a:focus:before {
+    content: "" !important;
+    margin-right: 0 !important;
 }
 
 /* Add flags to circle pictures */
