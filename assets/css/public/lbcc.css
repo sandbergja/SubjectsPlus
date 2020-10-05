@@ -1868,8 +1868,14 @@ ul.link-list-display li>a, ul.link-list-display li>a:visited, ul.link-list-displ
     color: #005B94;
 }
 
-/* Don't show the link arrow if there already is one, or if the link has focus */
-ul.link-list-display li a[href]:before, a:focus:before {
+/* Don't show the link arrow in a number of situations:
+     -> if there already is a link arrow
+     -> if the link has focus
+     -> contact links
+*/
+ul.link-list-display li a[href]:before,
+a:focus:before,
+a.contact-pluslet-link:before {
     content: "" !important;
     margin-right: 0 !important;
 }
