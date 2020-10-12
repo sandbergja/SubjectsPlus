@@ -43,7 +43,7 @@ if (!isset ($noheadersearch)) {
             <div class="autoC" id="autoC">
                 <form id="sp_admin_search" class="pure-form" method="post" action="' . getSubjectsURL() . 'search.php">
                 <input type="text" placeholder="Search" autocomplete="off" name="searchterm" size="" id="sp_search" class="ui-autocomplete-input autoC"><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
-                <input type="submit" name="submitsearch" id="topsearch_button" class="pure-button pure-button-topsearch" value="Go">
+                <input type="submit" alt="Search" name="submitsearch" id="topsearch_button" class="pure-button pure-button-topsearch" value="Go">
                 </form>
             </div>    ';
 } else {
@@ -56,11 +56,8 @@ $v2styles = TRUE;
     <?php
     global $google_analytics_ua;
     if( (isset($google_analytics_ua)) && (( !empty($google_analytics_ua))) ) {
-
-        echo "<div id='google-analytics-ua' style='visibility: hidden;' data-uacode='{$google_analytics_ua}'></div>";
-
         if( file_exists('includes/google-analytics-tracker.php') ) {
-            include_once ('google-analytics-tracker.php');
+            include_once ('includes/google-analytics-tracker.php');
         }
     }
     ?>
