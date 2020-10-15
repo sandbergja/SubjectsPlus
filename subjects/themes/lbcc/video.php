@@ -175,7 +175,7 @@ include("includes/header_lbcc.php");
         <div class="titlebar">
             <div class="titlebar_text"><?php print _("Feature Films"); ?></div>
         </div>
-        <div class="pluslet_body"><p>  Looking for movies to check out?  See <a href="">The Place Where We List Movies</a>.</p></div>
+        <div class="pluslet_body"><p>  Looking for movies to watch?  See <a href="https://libfind.linnbenton.edu:4430/catalog?f[format][]=Streaming+video">our streaming video collection</a>.</p></div>
     </div>
     <!-- start pluslet -->
     <div class="pluslet">
