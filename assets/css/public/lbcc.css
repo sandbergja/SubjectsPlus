@@ -1884,6 +1884,7 @@ a.contact-pluslet-link:before,
 a.no-decoration:before {
     content: "" !important;
     margin-right: 0 !important;
+    display: inline-block;
 }
 
 /* Add flags to circle pictures */
