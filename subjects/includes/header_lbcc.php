@@ -61,10 +61,10 @@ if (!isset ($noheadersearch)) {
             <div class="pure-u-1 pure-u-md-1-4">
                 <a href="<?php print $PublicPath; ?>"><img class="main_logo" src="<?php print $AssetPath; ?>images/public/logo.png" alt="Home Page" /></a>
             </div>
-            <a class="pure-u-1 pure-u-md-1-8 header-link" href="https://library.linnbenton.edu/hours">Hours</a>
+            <a class="pure-u-1 pure-u-md-1-8 header-link" href="covid19">COVID-19 services</a>
             <a class="pure-u-1 pure-u-md-1-8 header-link" href="databases.php">Databases</a>
-            <a class="pure-u-1 pure-u-md-1-8 header-link" href="https://library.linnbenton.edu/contact">Research Help</a>
-            <a class="pure-u-1 pure-u-md-1-8 header-link" href="http://library.linnbenton.edu/c.php?g=13287&p=70894">For faculty</a>
+            <a class="pure-u-1 pure-u-md-1-8 header-link" href="libappt">Research Help</a>
+            <a class="pure-u-1 pure-u-md-1-8 header-link" href="https://www.linnbenton.edu/student-services/library-tutoring-testing/library/faculty-services/index.php">For faculty</a>
 	        <a href="https://identity.linnbenton.edu" class="pure-button button-top">
                 <span class="fa fa-user" aria-hidden="true"></span>
                 My LB</a>

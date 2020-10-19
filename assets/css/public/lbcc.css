@@ -1774,9 +1774,11 @@ h1 {
 }
 
 a.header-link {
-    color: #000;
-    letter-spacing: .4px;
+    color: #005B94 !important;
+    font-size: 15px !important;
+    font-weight: 700;
     text-decoration: none;
+    letter-spacing: .5px !important;
 }
 
 .header-findit-search {
