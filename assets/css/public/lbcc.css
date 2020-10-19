@@ -1755,6 +1755,7 @@ h1 {
 
 .all-page-alert a, .all-page-alert a:active, .all-page-alert a:hover, .all-page-alert a:visited {
     color: #FFF;
+    border: 0px !important;
 }
 
 .button-top, a.button-top {
@@ -1877,6 +1878,7 @@ ul.link-list-display li>a, ul.link-list-display li>a:visited, ul.link-list-displ
      -> link has class no-decoration
 */
 ul.link-list-display li a[href]:before,
+.arrow-list li a:before,
 a:focus:before,
 a.contact-pluslet-link:before,
 .booklist_isbn_cover a:before,

@@ -39,7 +39,7 @@ class Pluslet_4 extends Pluslet {
 
 
         if ($faqArray) {
-            $this->_body = "<ul>";
+            $this->_body = "<ul class=\"arrow-list\">";
             foreach ($faqArray as $value) {
                 $short_q = Truncate($value["question"], 150, '');
 

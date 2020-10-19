@@ -101,7 +101,7 @@ $statement = $connection->prepare($q2);
 $statement->execute();
 $r2 = $statement->fetchAll();
 
-$newest_guides = "<ul>\n";
+$newest_guides = "<ul class=\"arrow-list\">\n";
 
 foreach ($r2 as $myrow2 ) {
     $guide_location = $guide_path . $myrow2[2];
@@ -121,7 +121,7 @@ $statement = $connection->prepare($qnew);
 $statement->execute();
 $rnew = $statement->fetchAll();
 
-$newlist = "<ul>\n";
+$newlist = "<ul class=\"arrow-list\">\n";
     foreach ($rnew as $myrow) {
     $db_url = "";
 
