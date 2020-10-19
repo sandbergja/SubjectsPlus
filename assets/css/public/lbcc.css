@@ -1880,15 +1880,15 @@ ul.link-list-display li>a, ul.link-list-display li>a:visited, ul.link-list-displ
      -> link has class no-decoration
      -> link is in the table of contents or booklist
 */
-ul.link-list-display li a[href]:before,
-.arrow-list li a:before,
-a:focus:before,
-a.contact-pluslet-link:before,
-.booklist_isbn_cover a:before,
-#letterhead a:before,
+ul.link-list-display li a[href]::before,
+.arrow-list a::before,
+a:focus::before,
+a.contact-pluslet-link::before,
+.booklist_isbn_cover a::before,
+#letterhead a::before,
 a.table-of-contents::before,
-.booklist_isbn_data a::before
-a.no-decoration:before {
+.booklist_isbn_data a::before,
+a.no-decoration::before {
     content: "" !important;
     margin-right: 0 !important;
     display: inline-block;
