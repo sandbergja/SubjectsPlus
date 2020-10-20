@@ -1876,6 +1876,7 @@ ul.link-list-display li>a, ul.link-list-display li>a:visited, ul.link-list-displ
      -> if the link has focus
      -> contact links
      -> book covers
+     -> staff pics
      -> in database list letters listing
      -> link has class no-decoration
      -> link is in the table of contents or booklist
@@ -1885,6 +1886,7 @@ ul.link-list-display li a[href]::before,
 a:focus::before,
 a.contact-pluslet-link::before,
 .booklist_isbn_cover a::before,
+.staffpic a::before,
 #letterhead a::before,
 a.table-of-contents::before,
 .booklist_isbn_data a::before,
